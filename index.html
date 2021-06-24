@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>small Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <h1>What ToDo ...</h1>
+        <p>
+            <small> A small to-do list for everything you want.</small>
+        </p>
+    </header>
+    <main>
+        <article>
+            <form class="filter">
+                <fieldset>
+                    <input class="radio-button" type="radio" id="all" name="choice" value="All">
+                    <label for="all">All</label><br>
+                    <input class="radio-button" type="radio" id="open" name="choice" value="Open">
+                    <label for="open">Open</label><br>
+                    <input class="radio-button" type="radio" id="done" name="choice" value="Done">
+                    <label for="done">Done</label><br>
+                </fieldset>
+            </form><br>
+            <form class="edit-todos">
+                <fieldset>
+                    <button class="open-todos">Show all open ToDos</button><br>
+                    <button class="done-todos">Remove all done ToDos</button>
+                </fieldset>
+            </form><br>
+            <form class="type-todo">
+                <fieldset>
+                    <input type="text" id="todos" name="submit-todos" placeholder="What ToDo?">
+                    <button class="add-button" for="todos">Add it</button>
+                </fieldset>
+            </form>
+            <ul class="todo-list">
+                <li>eat</li>
+                <li>walk</li>
+                <li>code</li>
+                <li>sleep</li>
+                <li>enjoy sun</li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>
